@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    color: white;
+    font-family: sans-serif;
+  }
+  body {
+    background-color: black;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+  .con1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    padding: 120px;
+    /* border: 2px solid red; */
+    margin-top: 30px;
+  }
+  .con2{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    /* padding: 120px; */
+    margin-top: 30px;
+}
+.photo {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.biodata{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+  }
+
+  .edu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+  }

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello</title>
+
+    <style>
+        body{
+            background-color: bisque;
+        }
+
+      .image-container,
+      .link {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        justify-content: center;
+        align-items: center;
+      }
+      .image {
+        width: auto;
+        height: 550px;
+        border: none;
+        border-radius: 25px;
+      }
+      .image:hover{
+        width: auto;
+        height: 580px;
+        transition: 300ms;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-container">
+      <img
+        src="assets/WhatsApp Image 2026-07-06 at 11.24.56 (1).jpeg"
+        class="image"
+      />
+    </div>
+
+    <a href="description.html" target="_blank" class="link"> Click here </a>
+  </body>
+</html>
