@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register for event</title>
+    <style>
+      * {
+        font-size: 22px;
+        font-family: sans-serif;
+      }
+      h1 {
+        font-size: 45px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+        justify-content: center;
+      }
+      body {
+        background-color: bisque;
+      }
+      .btn{
+        background-color: rgb(72, 72, 195);
+        border: none;
+        padding: 12px 25px;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+      .btn:hover{
+        padding: 15px 28px;
+        transition: 100ms;
+      }
+      a{
+        color: white;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="done.html" method="get">
+      <h1>User Registration Form</h1>
+
+      <div>
+        <label for="name"> Full name: </label>
+        <input type="text" name="full name" id="name" />
+      </div>
+
+      <div>
+        <label for="email"> Email: </label>
+        <input type="email" name="email" id="email" />
+      </div>
+
+      <div>
+        <label for="phno"> Phone Number </label>
+        <input type="phno" name="phno" id="phno" />
+      </div>
+
+      <div>
+        <label for="Ticket">Number of tickets</label>
+        <input type="Ticket" name="Ticket" id="Ticket"/>
+      </div>
+
+      <div>
+        <label for="seat">Preferred Seat</label>
+        <input type="seat" name="seat" id="seat" min="1"/>
+      </div>
+
+      <h1>
+        Payment method
+      </h1>
+
+      <div>
+        <label for="upi">UPI</label>
+        <input type="radio" name="pay" id="upi"/>
+      </div>
+
+      <div>
+        <label for="netb">Net Banking</label>
+        <input type="radio" name="pay" id="netb"/>
+      </div>
+
+      <div>
+        <label for="cash">Cash</label>
+        <input type="radio" name="pay" id="cash"/>
+      </div>
+
+      <div>
+        <button class="btn">
+          <a href="done.html" target="_blank">Submit</a>
+        </button>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic HTML Form</title>
+    <style>
+      * {
+        font-size: 22px;
+        font-family: sans-serif;
+      }
+      h1 {
+        font-size: 45px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+        justify-content: center;
+      }
+      body {
+        background-color: bisque;
+      }
+      .btn{
+        background-color: rgb(72, 72, 195);
+        border: none;
+        padding: 12px 25px;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+      .btn:hover{
+        padding: 15px 28px;
+        transition: 100ms;
+      }
+      a{
+        color: white;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="success.html" method="post">
+      <h1>User Registration Form</h1>
+
+      <div>
+        <label for="name"> Full name: </label>
+        <input type="text" name="full name" id="name" />
+      </div>
+
+      <div>
+        <label for="email"> Email: </label>
+        <input type="email" name="email" id="email" />
+      </div>
+
+      <div>
+        <label for="password"> password </label>
+        <input type="password" name="password" id="password" />
+      </div>
+
+      <div>
+        <label for="age"> Age </label>
+        <input type="age" name="age" id="age" min="1" />
+      </div>
+
+      <h1>Gender</h1>
+
+      <div>
+        <input type="radio" name="gender" id="male" />
+        <label for="male">Male</label>
+      </div>
+
+      <div>
+        <input type="radio" name="gender" id="female" />
+        <label for="female">Female</label>
+      </div>
+
+      <div>
+        <button class="btn">
+          <a href="success.html" target="_blank">Submit</a>
+        </button>
+      </div>
+    </form>
+  </body>
+</html>
